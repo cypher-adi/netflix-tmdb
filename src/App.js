@@ -1,13 +1,14 @@
 import React from 'react';
 import Row from './components/Row';
+import Banner from './components/Banner';
 import './App.css';
 
 import endpoints from './utils/endpoints';
 
 const App = () => {
   return (
-    <>
-      <h1>Netflix Clone</h1>
+    <div className="app">
+      <Banner />
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={endpoints.fetchNetflixOriginals}
@@ -20,7 +21,7 @@ const App = () => {
       <Row title="Horror Movies" fetchUrl={endpoints.fetchHorrorMovies} />
       <Row title="Romance Movies" fetchUrl={endpoints.fetchRomanceMovies} />
       <Row title="Documentaries" fetchUrl={endpoints.fetchDocumentaries} />
-    </>
+    </div>
   );
 };
 
