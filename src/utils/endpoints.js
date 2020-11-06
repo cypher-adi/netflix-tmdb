@@ -1,4 +1,4 @@
-const TMDB_API_KEY = 'ab19b0e35e703f120caf73c44cb929d4';
+const TMDB_API_KEY = '<API_KEY_HERE>';
 
 const endpoints = {
   fetchTrending: `/trending/all/week?api_key=${TMDB_API_KEY}&language=en-US`,
